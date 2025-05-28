@@ -209,7 +209,7 @@ Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE` pour plus d
 Cette application est fournie à des fins éducatives et d'automatisation personnelle. L'auteur ne peut être tenu responsable de l'usage qui en est fait. Vérifiez toujours la conformité de vos demandes avec la législation applicable.
 
 ### Crédits
-- **Développeur** : [6sco](https://github.com/6sco)
+- **Développeur** : [6sco](https://github.com/Este-C)
 - **Inspiré par** : Le mouvement pour la protection des données personnelles en Europe
 - **Remerciements** : À tous les contributeurs et la communauté RGPD
 
