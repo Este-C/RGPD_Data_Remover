@@ -1,0 +1,15 @@
+Objet : Demande de suppression du compte – RGPD
+
+Madame, Monsieur,
+
+Je suis titulaire du compte {{account}} sur vôtre site, qui diffuse des informations me concernant.
+
+Je souhaite obtenir la clôture de mon compte et vous demande, en application de l’article 17.1 du Règlement général sur la protection des données (RGPD),  de supprimer l’ensemble de mes données personnelles qui lui sont rattachées
+
+Je vous remercie de bien vouloir m'informer des mesures prises à la suite de ma demande dans les meilleurs délais et au plus tard dans un délai d’un mois à compter de sa réception (article 12.3 du RGPD).
+
+Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations distinguées.
+
+Cordialement,
+{{prenom}} {{nom}}
+{{email}}

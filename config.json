@@ -1,0 +1,12 @@
+{
+  "account": "Jdoe77",
+  "nom": "Doe",
+  "prenom": "John",
+  "email": "JohnDoe@gmail.com",
+  "password": "abcdefghijklmnop",
+  "smtp_server": "smtp.gmail.com",
+  "smtp_port": 587,
+  "piece_identite": "assets/identite/idCard.png",
+  "threads": 10,
+  "auto_select_first_email": false
+}

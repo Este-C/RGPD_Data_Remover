@@ -1,0 +1,6 @@
+tqdm
+colorama
+requests
+beautifulsoup4
+lxml
+jinja2
