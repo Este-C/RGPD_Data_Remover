@@ -2,8 +2,7 @@ Objet : Demande de suppression de mes données personnelles – RGPD
 
 Madame, Monsieur,
 
-En application de l’article 17.1 du Règlement général sur la protection des données (RGPD), je vous prie d’effacer de vos fichiers les données personnelles suivantes me concernant
-sous le nom de compte {{account}} .
+En application de l’article 17.1 du Règlement général sur la protection des données (RGPD), je vous prie d’effacer de vos fichiers les données personnelles me concernant.
 
 Je demande que ces informations soient supprimées car je ne souhaite plus que mes informations figurent sur vôtre site.
 Vous trouverez ci-joint une copie de ma pièce d’identité afin de confirmer mon identité.
