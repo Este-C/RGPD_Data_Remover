@@ -7,47 +7,34 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![GDPR Compliant](https://img.shields.io/badge/GDPR-Compliant-green.svg)](https://gdpr.eu/)
 
-> **Choose your language** | **Choisissez votre langue** :
-> - [🇫🇷 Français](#french-version)
-> - [🇬🇧 English](#english-version)
 
 ---
 
-# 🇫🇷 French Version {#french-version}
+## 📁 Structure du Projet
 
-## 🎯 Contexte
-
-Dans un monde numérique où nos données personnelles sont collectées en permanence, exercer son **droit à l'effacement** (Article 17 du RGPD) devient crucial mais fastidieux. RGPD Data Remover automatise l'envoi de demandes de suppression de données personnelles à des centaines d'entreprises, vous permettant de reprendre le contrôle de votre vie privée en quelques clics.
-
-**Pourquoi cette application ?**
-- ⚡ **Efficacité** : Envoyez des centaines de demandes en une seule exécution
-- 🎯 **Précision** : Templates juridiquement conformes au RGPD
-- 🔒 **Sécurité** : Vos données restent locales, aucune transmission vers des tiers
-- 📊 **Suivi** : Historique complet de toutes vos demandes
-
+```
+RGPD_Data_Remover/
+├── assets/
+│   ├── email_templates/        # Templates de demandes RGPD
+│   │   ├── account_deletion.txt
+│   │   └── deletion_request.txt
+│   └── identite/              # Vos données d'identité
+│       └── carte d'identitée
+├── domains.txt                # Liste des domaines à traiter
+├── drafts/                   # Brouillons des emails
+│   └── emails_draft.json
+├── emails_sent/              # Historique des envois
+├── modules/                  # Modules Python
+│   ├── crawler.py           # Extraction des emails
+│   ├── email_builder.py     # Construction des messages
+│   ├── sender.py            # Envoi des emails
+│   └── utils.py             # Utilitaires
+├── INSTALL.sh               # Script d'installation
+├── main.py                  # Point d'entrée principal
+├── requirements.txt         # Dépendances Python
+└── README.md               # Cette documentation
+```
 ---
-
-## 📋 Fonctionnalités
-
-### 🤖 Automatisation Intelligente
-- **Crawler automatique** : Extraction des adresses email de contact/DPO
-- **Templates personnalisables** : Modèles de demandes personalisable
-- **Envoi groupé** : Traitement de listes de domaines en masse
-- **Gestion des erreurs** : Retry automatique et logging détaillé
-
-### 📧 Gestion des Communications
-- **Templates RGPD** : Demandes de suppression
-- **Personnalisation** : Insertion automatique de vos données d'identité
-- **Suivi des envois** : Historique complet avec timestamps
-- **Brouillons** : Prévisualisation avant envoi
-
-### 🔧 Configuration Flexible
-- **Paramétrage Gmail** : Intégration native avec les serveurs Gmail
-- **Domaines personnalisés** : Ajoutez vos propres listes d'entreprises
-- **Modèles modifiables** : Adaptez les templates selon vos besoins
-
----
-
 ## 🚀 Installation et Lancement Initial
 
 ### Prérequis
@@ -115,32 +102,6 @@ python3 main.py
 3. Génère des emails personnalisés conformes au RGPD
 4. Envoie les demandes et enregistre l'historique
 
----
-
-## 📁 Structure du Projet
-
-```
-RGPD_Data_Remover/
-├── assets/
-│   ├── email_templates/        # Templates de demandes RGPD
-│   │   ├── account_deletion.txt
-│   │   └── deletion_request.txt
-│   └── identite/              # Vos données d'identité
-│       └── carte d'identitée
-├── domains.txt                # Liste des domaines à traiter
-├── drafts/                   # Brouillons des emails
-│   └── emails_draft.json
-├── emails_sent/              # Historique des envois
-├── modules/                  # Modules Python
-│   ├── crawler.py           # Extraction des emails
-│   ├── email_builder.py     # Construction des messages
-│   ├── sender.py            # Envoi des emails
-│   └── utils.py             # Utilitaires
-├── INSTALL.sh               # Script d'installation
-├── main.py                  # Point d'entrée principal
-├── requirements.txt         # Dépendances Python
-└── README.md               # Cette documentation
-```
 
 ---
 
@@ -161,38 +122,6 @@ Cette application s'appuie sur vos droits garantis par le **Règlement Général
 - 🇫🇷 **CNIL - Guide pratique** : [Vos droits](https://www.cnil.fr/fr/les-droits-pour-maitriser-vos-donnees-personnelles)
 - 🌍 **EDPB - Lignes directrices** : [Site officiel](https://edpb.europa.eu/guidelines_fr)
 
----
-
-## 🔒 Sécurité et Confidentialité
-
-### Engagement de Confidentialité
-- **Données locales** : Toutes vos informations restent sur votre machine
-- **Aucune télémétrie** : Aucune donnée n'est transmise à des tiers
-- **Code ouvert** : Transparence totale du fonctionnement
-
-### Bonnes Pratiques
-- Utilisez un mot de passe d'application dédié
-- Vérifiez régulièrement l'historique des envois
-- Conservez une copie de vos demandes pour vos dossiers (A METTRE EN PLACE)
-
----
-
-### Roadmap
-- [ ] Interface graphique (GUI)
-- [ ] Support d'autres fournisseurs email
-- [ ] Templates multilingues
-- [ ] Intégration API entreprises
-- [ ] Notifications de suivi
-
----
-
-## 📞 Support et Communauté
-
-### Obtenir de l'Aide
-- 🐛 **Bugs** : [Ouvrir une issue](https://github.com/Este-C/RGPD_Data_Remover/issues)
-- 💡 **Suggestions** : [Discussions GitHub](https://github.com/Este-C/RGPD_Data_Remover/discussions)
-- 📧 **Contact** : [Email du développeur](mailto:estecarpentier@duck.com)
-
 ### Ressources Utiles
 - [Guide RGPD pour les particuliers](https://www.cnil.fr/fr/reglement-europeen-protection-donnees/chapitre2#Article12)
 - [Modèles de demandes RGPD](https://www.cnil.fr/fr/modeles/courrier)
@@ -209,27 +138,11 @@ Ce projet est distribué sous licence MIT. Voir le fichier `LICENSE` pour plus d
 Cette application est fournie à des fins éducatives et d'automatisation personnelle. L'auteur ne peut être tenu responsable de l'usage qui en est fait. Vérifiez toujours la conformité de vos demandes avec la législation applicable.
 
 ### Crédits
-- **Développeur** : [6sco](https://github.com/Este-C)
-- **Inspiré par** : Le mouvement pour la protection des données personnelles en Europe
-- **Remerciements** : À tous les contributeurs et la communauté RGPD
-
----
-
-## 🌟 Soutenez le Projet
-
-Si cette application vous aide à protéger votre vie privée :
-- ⭐ **Donnez une étoile** sur GitHub
-- 🔄 **Partagez** avec vos proches
-- 🐛 **Contribuez** en rapportant des bugs
-- 💰 **Soutenez** le développement
-
+- **Développeur** : [Este-C](https://github.com/Este-C)
 ---
 
 **Protégez votre vie privée. C'est votre droit. 🛡️**
 
----
-## 🛠️ A Suivre :
-- Conservez une copie de vos demandes pour vos dossiers (A METTRE EN PLACE)
 
-*Dernière mise à jour : Mai 2025*
+*Dernière mise à jour : Juin 2025*
 *Version : 1.0.0*
